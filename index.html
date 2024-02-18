@@ -3,15 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medhabi Paribahan</title>
+    <title>MP E-Ticketing System</title>
     <!-- tailwind and daisyUi links -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- styles link -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <main>
+<body class="font-raleway">
+    <header class="my-12 mx-32">
+        <!-- navbar -->
+        <nav class="flex items-center justify-between">
+            <div class="nav-title">
+                <a href="#" class="text-4xl font-extrabold">MP E-Ticket</a>
+            </div>
+            <div class="nav-manu">
+                <ul class="flex flex-row gap-10  text-lg text-[#030712B2] menu menu-vertical lg:menu-horizontal rounded-box">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="right-icon border-2 border-green-300 font-bold text-green-400 bg-[#1DD1001A] text-lg p-4 rounded-xl flex gap-2">
+                <p>Bus</p>
+                <img src="images/tabler-icon-bus.png" alt="">
+            </div>
+        </nav>
+        <div class="bg-[url('images/banner.png')] h-[550px] bg-center mt-8 bg-cover bg-no-repeat border rounded-3xl text-white flex justify-center items-center">
+            <div class="flex flex-col items-center gap-4 pb-12">
+                <h1 class="text-7xl font-extrabold">End-to-End Travel with</h1>
+                <h1 class="text-6xl font-extrabold text-[#1DD100] ">Medhabi Paribahan</h1>
+                <h4 class="text-lg text-center max-w-[690px] pb-4">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined </h4>
+                <button class="btn-primary border-none rounded-xl text-black font-bold text-xl px-8 py-5 bg-[#1DD100] hover:bg-[#64ff4c] active:bg-[#2fe113]">Buy Tickets</button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="my-12 mx-32">
+        <div id="coupon-section" class="flex flex-col gap-12">         
+            <h1 class="text-center text-4xl font-bold">Best offers for you</h1>
+            <div id="coupon-div" class="flex gap-6 justify-between">
+                <div id="coupon-1" class="divide-x-4 divide-dashed bg-amber-400 rounded-6 flex text-center items-center">
+                    <p class="text-5xl font-extrabold py-12 px-16">15% OFF <br>
+                        <span class="text-2xl font-semibold">on your next purchase</span><br>
+                        <span class="text-lg text-[#03071280]">use by February 2024</span>
+                    </p>
+                    <p class="p-12 text-3xl font-bold">NEW15 <br>
+                        <span class="text-lg font-medium text-[#03071266]">Coupon Code</span>            
+                    </p>
+                </div>
+                <div id="coupon-2" class="divide-x-4 divide-dashed bg-rose-400 rounded-6 flex text-center items-center">
+                    <p class="text-5xl font-extrabold py-12 px-16">20% OFF <br>
+                        <span class="text-2xl font-semibold">on your next purchase</span><br>
+                        <span class="text-lg text-[#03071280]">use by February 2024</span>
+                    </p>
+                    <p class="p-12 text-3xl font-bold">couple 20 <br>
+                        <span class="text-lg font-medium text-[#03071266]">Coupon Code</span>            
+                    </p>
+                </div>
+            </div>
+            
+        </div>
 
     </main>
     <script src="scripts/meparibahan.js"></script>
