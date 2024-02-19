@@ -5,7 +5,7 @@
     font-family: "Raleway", sans-serif;
 }
 
-#coupon-1, #coupon-2{
+#coupon-1, #coupon-2, #coupon-ticket-details{
     position: relative;
 }
     
@@ -27,4 +27,22 @@
 .circle2{
     top: 240px;
     right: 190px;
+}
+
+.circle3, .circle4{
+    background: #F7F8F8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.circle3{
+    top: -25px;
+    right:260px;
+}
+.circle4{
+    top: 365px;
+    right: 260px;
 }
