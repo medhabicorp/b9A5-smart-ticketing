@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Ticket</title>
+    <!-- daisyui  link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="pl-20 pr-20">
+      <nav class="pt-10">
+        <div class="flex justify-between">
+          <div>
+            <h1 class="font-extrabold">N-Ticket</h1>
+          </div>
+          <div>
+            <ul class="flex space-x-8">
+              <li>Home</li>
+              <li>About</li>
+              <li>Destination</li>
+              <li>Search</li>
+            </ul>
+          </div>
+          <div>
+            <button class="btn btn-outline bg-[#d6f5d1] text-[#1DD100]">
+              Bus <img src="images/bus-icon.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section  -->
+      <section class="pt-6">
+        <div
+          class="flex flex-col justify-center items-center bg-no-repeat pt-20 bg-cover h-screen rounded-3xl"
+          style="background-image: url(images/banner.png)"
+        >
+          <div>
+            <!-- <h1 class="font-black text-white ">End-to-End Travel with </h1>
+             <h1 class="font-black text-[#1DD100]  "> P Paribahan</h1> -->
+            <h1 class="font-black text-white">
+              End-To-Travel With <br />
+              <span class="font-black text-[#1DD100] pl-8"> P Paribahan</span>
+            </h1>
+          </div>
+
+          <p class="text-white pt-4 pb-4 pl-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            vitae asperiores corporis, culpa beatae accusamus itaque alias omnis
+            voluptatibust?
+          </p>
+          <button class="bg-[#1DD100] rounded pl-2 pr-2">Buy Ticket</button>
+        </div>
+      </section>
+      <!-- coupun section -->
+      <section class="pt-10">
+        <div class="flex justify-center pb-5">
+          <h1 class="font-black">Best Offer for you</h1>
+        </div>
+        <!-- -------------------------- -->
+        <div class="flex justify-around space-x-10">
+          <!-- 15%  -->
+          <div
+            class="justify-between pl-10 pr-10 bg-yellow-500 w-full h-44 rounded flex pt-10"
+          >
+            <div class="">
+              <h1 class="font-semibold">15% OFF</h1>
+              <h3>on your next purchase</h3>
+              <p>used by january 2024</p>
+            </div>
+            <!-- <div style="border-left: 3px dotted white; height: 106px;"></div>  -->
+            <div class="flex items-center justify-center">
+              <img class="" src="images/cupon-devider.png" alt="" />
+            </div>
+
+            <div class="flex flex-col">
+              <h1 class="font-medium">NEW15</h1>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+
+          <!-- 20%  -->
+          <div
+            class="justify-between pl-10 pr-10 bg-pink-400 w-full h-44 rounded flex pt-10"
+          >
+            <div>
+              <h1 class="font-semibold">20% OFF</h1>
+              <h3>on your next purchase</h3>
+              <p>used by january 2024</p>
+            </div>
+            <!-- <div style="border-left: 3px dotted white; height: 106px;"></div>  -->
+            <div class="flex items-center justify-center">
+              <img class="" src="images/cupon-devider.png" alt="" />
+            </div>
+            <div>
+              <h1 class="font-medium">NEW15</h1>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5 flex justify-center">
+          <button class="btn btn-outline btn-success">See All Offer</button>
+        </div>
+      </section>
+
+      <!-- ticket process -->
+      <section class="bg-slate-300 pt-8">
+        <!-- heading part  -->
+        <div class="flex flex-col justify-center items-center pb-5 pl-20 pr-20">
+          <h1 class="font-black">P.H Paribahan</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut autem
+            blanditiis asperiores dolorum neb ex modi?
+          </p>
+        </div>
+
+        <!-- 1st card -->
+        <div class="bg-white flex justify-between pt-10 pb-10 w-screen">
+          <!-- leftside -->
+          <div class="w-screen">
+            <!-- ----------------------------- -->
+            <div class="flex justify-between pb-6">
+              <div class="flex justify-between">
+                <img src="images/bus-logo.png" alt="" />
+                <div class="pl-2">
+                  <h1 class="font-semibold">GreenLine Paribahan</h1>
+                  <p>Coach-0096-WEB | AC_Business</p>
+                </div>
+              </div>
+
+              <div>
+                <button class="btn btn-outline btn-success">
+                  <img src="images/seat-green.png" alt="" /> 40 seat Left
+                </button>
+              </div>
+            </div>
+            <!-- -route-time -->
+            <div class="bg-slate-400 pl-4 pr-4 font-semibold">
+              <div class="flex justify-between pt-4 pb-4">
+                <h1>Route</h1>
+                <h1>Dhaka-Sylhet</h1>
+              </div>
+              <hr />
+              <div class="flex justify-between pt-4 pb-4">
+                <h1>Departure Time</h1>
+                <h1>9.00 AM</h1>
+              </div>
+              <hr />
+              <div class="flex justify-between pt-4 pb-4">
+                <button class="bg-slate-600 rounded h-10 pl-4 pr-4">
+                  Boarding Point-Laxmipur
+                </button>
+                <button class="bg-slate-600 rounded h-10 pl-4 pr-4">
+                  Boarding Point-Laxmipur
+                </button>
+                <button class="bg-slate-600 rounded h-10 pl-4 pr-4">
+                  Boarding Point-Laxmipur
+                </button>
+              </div>
+            </div>
+          </div>
+          <div><img src="images/info-devider.png" alt="" /></div>
+          <!-- right side -->
+          <div
+            class="bg-slate-500 w-screen flex flex-col justify-center items-center font-extrabold"
+          >
+            <div><img src="images/fare.png" alt="" /></div>
+            <h1>550 TK</h1>
+            <p>Per seat</p>
+          </div>
+        </div>
+
+        <!-- 2nd card  -->
+        <div class="flex justify-around space-x-10 pt-6 pb-8">
+          <!--L show ticket part  -->
+          <div>
+            <h1 class="font-medium pb-2">Select your seat</h1>
+            <hr />
+            <div class="flex justify-between space-x-96 bg-orange-200">
+              <div class="flex">
+                <img src="images/seat-gray.png" alt="" />
+                <h1>Available</h1>
+              </div>
+
+              <div class="flex">
+                <img src="images/seat-green-filled.png" alt="" />
+                <h1 class="text-green-500">Selected</h1>
+              </div>
+            </div>
+            <hr />
+            <!-- seats -->
+            <div class="flex justify-end pt-4">
+              <button class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600">
+                <img src="images/steering.svg" alt="" />
+              </button>
+            </div>
+            <!-- a line -->
+            <div  class="flex items-center justify-between pt-4">
+              <h1 class="pl-2">A</h1>
+              <button onclick="" id="A1"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                A1
+              </button>
+              <button onclick="" id="A2" 
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                A2
+              </button>
+              <button onclick="" id="A3"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                A3
+              </button>
+              <button onclick="" id="A4"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                A4
+              </button>
+
+
+            </div>
+            <!-- B line -->
+            <div class="flex items-center justify-between pt-4">
+              <h1 class="pl-2">B</h1>
+              <button onclick="" id="B1"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                B1
+              </button>
+              <button onclick="" id="B2"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                B2
+              </button>
+              <button onclick="" id="B3"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                B3
+              </button>
+              <button onclick="" id="B4"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                B4
+              </button>
+            </div>
+
+
+            <!-- C line -->
+            <div class="flex items-center justify-between pt-4">
+              <h1 class="pl-2">C</h1>
+              <button onclick="" id="C1"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                C1
+              </button>
+              <button onclick="" id="C2"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                C2
+              </button>
+              <button onclick="" id="C3"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                C3
+              </button>
+              <button onclick="" id="C4"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                C4
+              </button>
+            </div>
+
+            <!-- d line -->
+            <div class="flex items-center justify-between pt-4">
+              <h1 class="pl-2">D</h1>
+              <button onclick="" id="D1"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                D1
+              </button>
+              <button onclick="" id="D2"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                D2
+              </button>
+              <button onclick="" id="D3"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                D3
+              </button>
+              <button onclick="" id="D4"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                D4
+              </button>
+            </div>
+
+            <!-- E line -->
+            <div class="flex items-center justify-between pt-4">
+              <h1 class="pl-2">E</h1>
+              <button onclick="" id="E1"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                E1
+              </button>
+              <button onclick="" id="E2"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                E2
+              </button>
+              <button onclick="" id="E3"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                E3
+              </button>
+              <button onclick="" id="E4"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                E4
+              </button>
+            </div>
+            <!-- F line -->
+            <div class="flex items-center justify-between pt-4">
+              <h1 class="pl-2">F</h1>
+              <button onclick="" id="F1"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                F1
+              </button>
+              <button onclick="" id="F2"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                F2
+              </button>
+              <button onclick="" id="F3"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                F3
+              </button>
+              <button onclick="" id="F4"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                F4
+              </button>
+            </div>
+            <!-- G line -->
+            <div class="flex items-center justify-between pt-4">
+              <h1 class="pl-2">G</h1>
+              <button onclick="" id="G1"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                G1
+              </button>
+              <button onclick="" id="G2"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                G2
+              </button>
+              <button onclick="" id="G3"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                G3
+              </button>
+              <button onclick="" id="G4"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                G4
+              </button>
+            </div>
+
+            <!-- H line -->
+            <div class="flex items-center justify-between pt-4">
+              <h1 class="pl-2">H</h1>
+              <button onclick="" id="H1"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                H1
+              </button>
+              <button onclick="" id="H2"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                H2
+              </button>
+              <button onclick="" id="H3"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                H3
+              </button>
+              <button onclick="" id="H4"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                H4
+              </button>
+            </div>
+            <!-- I line -->
+            <div class="flex items-center justify-between pt-4">
+              <h1 class="pl-2">I</h1>
+              <button onclick="" id="I1"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                I 1
+              </button>
+              <button onclick="" id="I2"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                I 2
+              </button>
+              <button onclick="" id="I3"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                I 3
+              </button>
+              <button onclick="" id="I4" 
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                I 4
+              </button>
+            </div>
+            <!-- J line -->
+            <div class="flex items-center justify-between pt-4">
+              <h1 class="pl-2">J</h1>
+              <button onclick="" id="J1"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                J 1
+              </button>
+              <button onclick="" id="J2"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                J 2
+              </button>
+              <button onclick="" id="J3"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                J 3
+              </button>
+              <button onclick="" id="J4"
+                class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
+              >
+                J 4
+              </button>
+            </div>
+          </div>
+
+          <!--R ticket amount part -->
+
+          <div class="w-96">
+            <div class="pb-2 font-medium">
+              <h1>Select Your seat</h1>
+            </div>
+            <hr />
+
+            <div class="bg-orange-100 pb-2">
+              <div class="flex justify-between pb-2">
+                <h1>seat</h1>
+                <h1>class</h1>
+                <h1>price</h1>
+              </div>
+              <hr />
+              <div class="flex justify-between pb-2">
+                <p>C2</p>
+                <p>Economy</p>
+                <p>550</p>
+              </div>
+              <div class="flex justify-between pb-2">
+                <p>C2</p>
+                <p>Economy</p>
+                <p>550</p>
+              </div>
+              <hr />
+              <div class="flex justify-between pb-2">
+                <p>Total price</p>
+                <p>BDT 1100</p>
+              </div>
+              <div class="flex justify-around pt-2">
+                <input
+                  class="rounded text-center"
+                  type="text "
+                  placeholder="Have any coupun?"
+                />
+                <button class="bg-green-500 text-white pl-4 pr-4 rounded">
+                  Apply
+                </button>
+              </div>
+              <div class="flex justify-between pt-2">
+                <p>Grand Total</p>
+                <p>BDT 1100</p>
+              </div>
+            </div>
+
+            <div class="w-96 pt-8">
+              <h1 class="pt-4 pb-2">Passenger Name*</h1>
+              <input
+                class="w-96 h-10 rounded"
+                type="text"
+                placeholder="Enter Your Name"
+              />
+              <h1 class="pt-4 pb-2">Phone Number*</h1>
+              <input
+                class="w-96 h-10 rounded"
+                type="text"
+                placeholder="Enter Your Phone Number"
+              />
+              <h1 class="pt-4 pb-2">Email ID</h1>
+              <input
+                class="w-96 h-10 rounded"
+                type="text"
+                placeholder="Enter Your Email ID"
+              />
+            </div>
+            <div class="flex justify-center pt-6">
+              <button class="bg-green-500 text-white w-96 h-10">Next</button>
+            </div>
+            <div class="flex justify-around pt-4">
+              <h1 class="arc">Terms and conditions</h1>
+              <h1 class="arc">Cancellation Policy</h1>
+            </div>
+            <!-- r end div -->
+          </div>
+          <!--  -->
+        </div>
+      </section>
+
+      <!-- sucess -->
+      <section class="pt-8 pb-8">
+       <div class="flex flex-col justify-center items-center">
+         <div class="flex flex-col items-center ">
+          <img src="images/success.png" alt="" />
+          <h1 class="pt-4">success</h1>
+        </div>
+        <div class="pt-4 flex flex-col items-center">
+          <p>
+            Thank you for Booking Our Bus Seats. We are working hard to find the
+            best service and deals for you.
+          </p>
+          <p>Shortly you will find a confirmation in your email.</p>
+        </div>
+        <div class="pt-6">
+          <button class="rounded-full pl-8 pr-8 h-10 bg-green-500 text-white" > Contiune</button>
+        </div>
+       </div>
+      </section>
+    </main>
+    <footer class="bg-slate-950 pt-10">
+      <!-- pl-20 pr-20 -->
+      <div class="pl-20 pr-20">
+        <div class="flex justify-between items-center text-white pb-6">
+          <div>
+            <h1 class="font-medium">P-Ticket</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              cumque nobis at, deleniti persp. Odit, mollitia illo!
+            </p>
+          </div>
+          <div>
+            <h1>Download our app</h1>
+            <img src="images/playstore.svg" alt="" />
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="pt-6 pb-10 text-white">
+          <div class="flex justify-between items-center">
+            <p>@all rights reseved.N-Ticket service limited.2024</p>
+            <div>
+              <ul class="flex justify-between space-x-3">
+                <li>Terms & conditions</li>
+                <li>Return & refund Policy</li>
+                <li>Privacy plolicy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/calculation.js"></script>
+  </body>
+</html>
