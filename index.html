@@ -157,16 +157,16 @@
                     </div>
                     <div id="all-seat" class="flex gap-32">
                         <div id="seat-left-side" class="grid grid-cols-2 gap-4 text-xl">
-                            <kbd id="A1" class="seat px-12 py-5">A1</kbd>
-                            <kbd id="A2" class="seat px-12 py-5">A2</kbd>
-                            <kbd id="B1" class="seat px-12 py-5">B1</kbd>
-                            <kbd id="B2" class="seat px-12 py-5">B2</kbd>
+                            <kbd id="A1" class="kbd seat px-12 py-5">A1</kbd>
+                            <kbd id="A2" class="kbd seat px-12 py-5">A2</kbd>
+                            <kbd id="B1" class="kbd seat px-12 py-5">B1</kbd>
+                            <kbd id="B2" class="kbd seat px-12 py-5">B2</kbd>
                         </div>
                         <div id="seat-right-side" class="grid grid-cols-2 gap-4 text-xl">
-                            <kbd id="A3" class="seat px-12 py-5">A3</kbd>
-                            <kbd id="A4" class="seat px-12 py-5">A4</kbd>
-                            <kbd id="B3" class="seat px-12 py-5">B3</kbd>
-                            <kbd id="B4" class="seat px-12 py-5">B4</kbd>
+                            <kbd id="A3" class="kbd seat px-12 py-5">A3</kbd>
+                            <kbd id="A4" class="kbd seat px-12 py-5">A4</kbd>
+                            <kbd id="B3" class="kbd seat px-12 py-5">B3</kbd>
+                            <kbd id="B4" class="kbd seat px-12 py-5">B4</kbd>
                         </div>                 
                     </div>
                 </div> 
@@ -177,23 +177,43 @@
                     <div class="bg-[#f7f8f8] rounded-xl flex flex-col gap-6 p-4 divide-y-2 divide-dashed">
                             <div id="selected-seat-display" class=" divide-y-2 divide-gray-200 divide-dashed">
                                 <ul class="flex justify-between items-center">
-                                        <li class="font-bold">Seat <span id="selected-seat-no" class="text-xl text-white rounded-md px-1 bg-green-600">0</span></li>
-                                        <li id="seat-class" class="font-bold">Class</li>
-                                        <li id="seat-fare" class="font-bold">Fare</li>
+                                        <li class="font-bold">Seat <span id="total-seats-selected" class="text-xl text-white rounded-md px-1 bg-green-600">0</span></li>
+                                        <li id="" class="font-bold">Class</li>
+                                        <li id="" class="font-bold">Fare</li>
+                                </ul>
+                                <div id="selected-seat-container" class=" selected-seat flex justify-between items-center">
+                                    <p id="selected-seat-name"></p>
+                                    <p id="seat-class-name"></p>
+                                    <p id="seat-price-amount"></p>
+                                </div>
+                                <ul id="" class=" selected-seat flex justify-between items-center hidden">
+                                    <li class="">A1</li>
+                                    <li id="seat-class" class="">Economy</li>
+                                    <li id="seat-fare" class="">550</li>
+                                </ul>
+                                <ul id="" class=" selected-seat flex justify-between items-center hidden">
+                                    <li class="">A2</li>
+                                    <li id="" class="">Economy</li>
+                                    <li id="" class="">550</li>
+                                </ul>
+                                <ul id="" class=" selected-seat flex justify-between items-center hidden">
+                                    <li class="">B1</li>
+                                    <li id="" class="">Economy</li>
+                                    <li id="" class="">550</li>
                                 </ul>
                             
                             </div>
                             <div class="flex justify-between">
                                 <p class="font-bold">Total Price:</p>
-                                <p class="font-bold">BDT <span id="total-amount">0</span></p>
+                                <p class="font-bold">BDT <span id="total-amount"></span></p>
                             </div>
                             <div class="flex">
-                                <input class="flex-1" type="text" placeholder="Have any coupon?">
-                                <button class="btn bg-[#1DD100] text-white text-base px-8">Apply</button>
+                                <input id="coupon-id" class="flex-1" type="text" placeholder="Have any coupon?">
+                                <button id="apply-btn" class="btn bg-[#1DD100] text-white text-base px-8">Apply</button>
                             </div>
                             <div class="flex justify-between">
                                 <h4 class="font-bold">Grand Total:</h4>
-                                <h4 class="font-bold">BDT <span id="grand-total">0</span></h4>
+                                <h4 class="font-bold">BDT <span id="grand-total"></span></h4>
                             </div>
                     </div>
                     <div class="min-w-full pt-8">
