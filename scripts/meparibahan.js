@@ -21,9 +21,9 @@ const seats=document.querySelectorAll(".seat");
 for (let i = 0; i < seats.length; i++) {
     const seat = seats[i];
     // console.log(seat.innerText);
-    seat.addEventListener("click", function(){
+    seat.addEventListener("click", function(event){
 
-        seat.classList.add('bg-green-600');
+        event.target.setAttribute('disabled', false);
 
         const seatName=seat.innerText;
         const className=document.getElementById("seat-class").innerText;
