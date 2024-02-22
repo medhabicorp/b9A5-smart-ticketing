@@ -92,7 +92,7 @@ for (let i = 0; i < seats.length; i++) {
            else if (couponCode==="COUPLE20"){
             const discountedGrandTotal= document.getElementById('grand-total');
             discountedGrandTotal.innerText=totalPrice*0.8;
-            couponElement="";
+            document.getElementById("coupon-id").value="";
             
            }
                 else{
