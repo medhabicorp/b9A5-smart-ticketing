@@ -1,5 +1,6 @@
 let totalPrice=0;
 let grandTotal=0;
+let totalSelectedSeats=0;
 
 function getTextElementValueById(elementId){
     const element=document.getElementById(elementId);
@@ -21,24 +22,25 @@ for (let i = 0; i < seats.length; i++) {
     const seat = seats[i];
     // console.log(seat.innerText);
     seat.addEventListener("click", function(){
-        
+
         seat.classList.add('bg-green-600');
-        
+
         const seatName=seat.innerText;
         const className=document.getElementById("seat-class").innerText;
         const priceText=document.getElementById("seat-fare").innerText;
         const price=parseInt(priceText);
-        // console.log(seatName, className, priceText);
         
         // seat count
-        const currentSeat = getTextElementValueById('total-seats-selected');
-        const totalSelectedSeats = currentSeat + 1;
-        setTextElementValueById('total-seats-selected', totalSelectedSeats);
-        
+        totalSelectedSeats++;
         if (totalSelectedSeats>4) {
+            seat.classList.remove('bg-green-600');
             alert("You can select only 4 seats");
             return;
         }
+
+
+        setTextElementValueById('total-seats-selected', totalSelectedSeats);
+
         // total price
         totalPrice+=price;
         grandTotal+=price;
@@ -53,11 +55,9 @@ for (let i = 0; i < seats.length; i++) {
         
         // seat Name append 
         const selectedSeatName=document.getElementById("selected-seat-name");
-
         const seatNameField=document.createElement("p");
         seatNameField.innerText=seatName;
         selectedSeatName.appendChild(seatNameField);
-
         // seat Class Append 
         const selectedSeatClass=document.getElementById("seat-class-name");
 
@@ -67,12 +67,13 @@ for (let i = 0; i < seats.length; i++) {
 
         // seat fare append 
         const selectedSeatPrice=document.getElementById("seat-price-amount");
-
         const seatPriceField=document.createElement("p");
         seatPriceField.innerText=price;
         selectedSeatPrice.appendChild(seatPriceField);
         
     })
+
+
 }
 
     const applyBtn=document.getElementById("apply-btn");
