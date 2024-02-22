@@ -191,16 +191,7 @@
                                     <li id="seat-class" class="">Economy</li>
                                     <li id="seat-fare" class="">550</li>
                                 </ul>
-                                <ul id="" class=" selected-seat flex justify-between items-center hidden">
-                                    <li class="">A2</li>
-                                    <li id="" class="">Economy</li>
-                                    <li id="" class="">550</li>
-                                </ul>
-                                <ul id="" class=" selected-seat flex justify-between items-center hidden">
-                                    <li class="">B1</li>
-                                    <li id="" class="">Economy</li>
-                                    <li id="" class="">550</li>
-                                </ul>
+
                             
                             </div>
                             <div class="flex justify-between">
@@ -237,7 +228,7 @@
                         />
                       </div>
                     <div>
-                        <button class="btn bg-[#1DD100] text-white text-base min-w-full">Next</button>
+                        <a href="#my_modal_8"><button class="btn bg-[#1DD100] text-white text-base min-w-full">Next</button></a>
                     </div>
                     <div class="flex justify-around">
                         <h1 class="text-base">Terms and conditions</h1>
@@ -248,25 +239,7 @@
 
             </section>    
         </section>
-        <!-- ticketing successful -->
-        <section class="pt-8 pb-8">
-            <div class="flex flex-col justify-center items-center">
-              <div class="flex flex-col items-center ">
-               <img src="images/success.png" alt="" />
-               <h1 class="pt-4">success</h1>
-             </div>
-             <div class="pt-4 flex flex-col items-center">
-               <p>
-                 Thank you for Booking Our Bus Seats. We are working hard to find the
-                 best service and deals for you.
-               </p>
-               <p>Shortly you will find a confirmation in your email.</p>
-             </div>
-             <div class="pt-6">
-               <button class="rounded-full pl-8 pr-8 h-10 bg-green-500 text-white" > Contiune</button>
-             </div>
-            </div>
-        </section>
+        
         <!-- footer section -->
          <footer class="bg-slate-950 pt-10">
 
@@ -301,6 +274,23 @@
            </div>
          </footer>
     </main>
+<!-- modal -->
+<div class="modal" role="dialog" id="my_modal_8">
+    <div class="modal-box flex flex-col items-center">
+        
+        <img src="images/success.png" class="max-h-20 max-w-20" alt="">
+        <h3 class="font-bold text-lg">success</h3>
+        <p class="py-4">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you.</p>
+        <p>Shortly you will find a confirmation in your email.</p>
+        <div class="modal-action">
+       <a href="#" class="btn">Continue</a>
+        </div>
+    </div>
+  </div>
+  
     <script src="scripts/meparibahan.js"></script>
+
+
+
 </body>
 </html>

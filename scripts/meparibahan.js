@@ -34,18 +34,17 @@ for (let i = 0; i < seats.length; i++) {
         const currentSeat = getTextElementValueById('total-seats-selected');
         const totalSelectedSeats = currentSeat + 1;
         setTextElementValueById('total-seats-selected', totalSelectedSeats);
-
+        
+        if (totalSelectedSeats>4) {
+            alert("You can select only 4 seats");
+            return;
+        }
         // total price
         totalPrice+=price;
         grandTotal+=price;
         document.getElementById('total-amount').innerText=totalPrice;
         document.getElementById('grand-total').innerText=grandTotal;
 
-        if (totalSelectedSeats>4) {
-            alert("You can select only 4 seats");
-            seat.setAttribute('disabled');
-            TotalSeatsLeft.setAttribute('disabled');
-        }
 
         // seat no reduce
         const currentTotalSeat = getTextElementValueById('seat-left');
@@ -84,21 +83,24 @@ for (let i = 0; i < seats.length; i++) {
         
 
         if (totalPrice>=2200) {
-           if(couponCode=== "NEW15"){
-            
+           if(couponCode==="NEW15"){
             const discountedGrandTotal= document.getElementById('grand-total');
             discountedGrandTotal.innerText=totalPrice*0.85;
+            document.getElementById("coupon-id").value="";
            }
-           else if (couponCode=== "couple20"){
+           else if (couponCode==="COUPLE20"){
             const discountedGrandTotal= document.getElementById('grand-total');
             discountedGrandTotal.innerText=totalPrice*0.8;
+            couponElement="";
             
            }
                 else{
                     alert("invalid coupon");
+                    couponElement="";
                 }
         }
         else{
             alert("Buy at least 4 tickets");
+            couponElement="";
         }
 })
